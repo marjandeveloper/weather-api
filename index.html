@@ -1,13 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather API</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-</head>
-<body>
-    <main id="weather"></main>
-</body>
+  </head>
+  <body>
+    <main id="weather">
+      <div id="weather-container">
+        <h2>Weather App</h2>
+
+        <h3>Weather in: <span id="city-name"></span></h3>
+        <div id="weather-container-content">
+          <div id="icon-container"><img id="icon" src="" alt="Weather icon"></img></div>
+          
+          <div class="weather-container-content-left">
+            <div class="weather-temp-title">Tempterature:</div>
+            <div class="weather-description-title">Description:</div>
+            <div class="weather-windspeed-title">Wind speed:</div>
+          </div>
+          <div class="weather-container-content-right">
+            <div class="weather-temp">
+              <span id="temp-num"></span>
+              <span class="celsius active"></span> |
+              <span class="fahrenheit"></span>
+            </div>
+            <div id="description">null</div>
+            <div id="wind-speed">null</div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

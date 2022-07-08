@@ -1,0 +1,80 @@
+body {
+  background-color: rgb(68, 141, 238);
+  padding: 0px;
+  margin: 0px;
+}
+body #weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body #weather #weather-container {
+  width: 400px;
+  height: auto;
+  background-color: white;
+  padding: 10px;
+}
+body #weather #weather-container h2 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(68, 141, 238);
+  color: white;
+}
+body #weather #weather-container h3 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+}
+body #weather #weather-container h3 span {
+  color: rgb(68, 141, 238);
+}
+body #weather #weather-container #weather-container-content {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid rgb(68, 141, 238);
+  padding: 3%;
+}
+body #weather #weather-container #weather-container-content #icon-container {
+  flex: 100%;
+  text-align: center;
+}
+body #weather #weather-container #weather-container-content #icon-container #icon {
+  border-left: 1px solid rgb(68, 141, 238);
+  border-right: 1px solid rgb(68, 141, 238);
+  padding: 2%;
+  margin-top: 3%;
+  border-radius: 15%;
+  width: 20%;
+}
+body #weather #weather-container #weather-container-content .weather-container-content-left {
+  flex: 40%;
+  text-align: left;
+  padding-left: 15%;
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+body #weather #weather-container #weather-container-content .weather-container-content-left div {
+  padding-bottom: 2%;
+}
+body #weather #weather-container #weather-container-content .weather-container-content-right {
+  flex: 30%;
+  text-align: left;
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+body #weather #weather-container #weather-container-content .weather-container-content-right div {
+  padding-bottom: 2%;
+  color: rgb(68, 141, 238);
+}
+body #weather #weather-container #weather-container-content .weather-container-content-right #temp-num {
+  font-weight: bold;
+}
+body #weather #weather-container #weather-container-content .weather-container-content-right .active {
+  font-weight: bolder;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,92 @@
+$color: rgba(68, 141, 238, 1);
+$center: center;
+
+body {
+  background-color: $color;
+  padding: 0px;
+  margin: 0px;
+
+  #weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    #weather-container {
+      width: 400px;
+      height: auto;
+      background-color: white;
+      padding: 10px;
+
+      h2 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        padding: 10px;
+        background-color: $color;
+        color: white;
+      }
+
+      h3 {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        padding: 10px;
+
+        span {
+          color: $color;
+        }
+      }
+
+      #weather-container-content {
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid $color;
+        padding: 3%;
+
+        #icon-container {
+          flex: 100%;
+          text-align: center;
+
+          #icon {
+            border-left: 1px solid $color;
+            border-right: 1px solid $color;
+            padding: 2%;
+            margin-top: 3%;
+            border-radius: 15%;
+            width: 20%;
+          }
+        }
+
+        .weather-container-content-left {
+          flex: 40%;
+          text-align: left;
+          padding-left: 15%;
+          padding-top: 2%;
+          padding-bottom: 1%;
+
+          div {
+            padding-bottom: 2%;
+          }
+        }
+        .weather-container-content-right {
+          flex: 30%;
+          text-align: left;
+          padding-top: 2%;
+          padding-bottom: 1%;
+
+          div {
+            padding-bottom: 2%;
+            color: $color;
+          }
+          #temp-num {
+            font-weight: bold;
+          }
+          .active {
+            font-weight: bolder;
+          }
+        }
+      }
+    }
+  }
+}
